@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Home Welcomes You for Navaratri Golu 2025</title>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600&family=Tiro+Devanagari+Sanskrit:ital@0;1&family=Noto+Sans+Devanagari:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Hind Siliguri', sans-serif;
+            color: #e6d6c5;
+            min-height: 100vh;
+            overflow-x: hidden;
+            position: relative;
+            line-height: 1.6;
+            background: url('file:///C:/Users/adith/Downloads/navaratri-invite/images/background.jpg') ;
+            background-size: cover;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(12, 11, 11, 0.85);
+            z-index: -1;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            position: relative;
+            width: 100%;
+            padding: 30px;
+            background: rgba(66, 53, 43, 0.8);
+            border-radius: 15px;
+            border: 2px solid #9e7d4a;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(5px);
+        }
+        
+        .sanskrit {
+            font-family: 'Tiro Devanagari Sanskrit', serif;
+            font-size: 3.2rem;
+            color: #d4af37;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+            margin-bottom: 15px;
+            letter-spacing: 3px;
+        }
+        
+        .header h1 {
+            font-family: 'Noto Sans Devanagari', sans-serif;
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            color: #e6c56b;
+            text-shadow: 0 0 15px rgba(230, 197, 107, 0.5);
+        }
+        
+        .header p {
+            font-size: 1.3rem;
+            max-width: 700px;
+            margin: 0 auto;
+            color: #d4b98c;
+            line-height: 1.8;
+        }
+        
+        .date-place {
+            background: rgba(76, 61, 49, 0.85);
+            padding: 25px 40px;
+            border-radius: 15px;
+            margin: 30px 0;
+            text-align: center;
+            border: 2px solid #9e7d4a;
+            box-shadow: 0 0 25px rgba(158, 125, 74, 0.4);
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(3px);
+        }
+        
+        .date-place::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, transparent, #d4af37, transparent);
+        }
+        
+        .date-place h2 {
+            color: #e6c56b;
+            margin-bottom: 20px;
+            font-size: 2rem;
+            font-family: 'Noto Sans Devanagari', sans-serif;
+            text-shadow: 0 0 10px rgba(230, 197, 107, 0.3);
+        }
+        
+        .date-place p {
+            font-size: 1.2rem;
+            margin: 10px 0;
+            color: #d4b98c;
+        }
+        
+        .date-place i {
+            margin-right: 10px;
+            color: #d4af37;
+        }
+        
+        .map-link-header {
+            display: inline-block;
+            margin-top: 15px;
+            color: #d4af37;
+            text-decoration: none;
+            font-weight: 600;
+            border: 2px solid #9e7d4a;
+            padding: 10px 20px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            background: rgba(41, 33, 26, 0.8);
+            font-size: 0.9rem;
+        }
+        
+        .map-link-header:hover {
+            background: rgba(212, 175, 55, 0.2);
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+            transform: translateY(-2px);
+        }
+        
+        .content {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 40px;
+            gap: 40px;
+        }
+        
+        .invitation-card {
+            flex: 1;
+            background: rgba(66, 53, 43, 0.8);
+            border-radius: 20px;
+            padding: 35px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+            border: 2px solid #9e7d4a;
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(5px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .invitation-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.15) 0%, transparent 70%);
+            transform: rotate(30deg);
+        }
+        
+        .invitation-card h2 {
+            color: #e6c56b;
+            font-family: 'Noto Sans Devanagari', sans-serif;
+            font-size: 2.4rem;
+            margin-bottom: 25px;
+            text-align: center;
+            position: relative;
+            text-shadow: 0 0 10px rgba(230, 197, 107, 0.3);
+        }
+        
+        .invitation-text {
+            color: #d4b98c;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        
+        .contact-info {
+            margin-top: 20px;
+            color: #d4b98c;
+            font-size: 1.1rem;
+        }
+        
+        .phone-link {
+            color: #d4af37;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .phone-link:hover {
+            color: #e6c56b;
+            text-shadow: 0 0 10px rgba(230, 197, 107, 0.5);
+        }
+        
+        .golu-gallery {
+            flex: 1;
+            background: rgba(66, 53, 43, 0.8);
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+            border: 2px solid #9e7d4a;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+            min-height: 450px;
+            backdrop-filter: blur(5px);
+        }
+        
+        .gallery-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            padding: 25px;
+            height: 100%;
+        }
+        
+        .gallery-item {
+            border-radius: 12px;
+            overflow: hidden;
+            position: relative;
+            height: 170px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+            border: 2px solid #7a6147;
+            transition: transform 0.3s ease;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .gallery-item:nth-child(1) {
+            grid-column: span 2;
+            height: 200px;
+        }
+        
+        .gallery-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4);
+        }
+        
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 12px;
+            text-align: center;
+            font-size: 1rem;
+            z-index: 2;
+            color: #d4b98c;
+        }
+        
+        .decoration {
+            position: absolute;
+            font-size: 2.2rem;
+            color: #d4af37;
+            opacity: 0.7;
+            animation: float 6s infinite ease-in-out;
+            z-index: 1;
+            text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+        }
+        
+        .decoration:nth-child(1) {
+            top: 10%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+        
+        .decoration:nth-child(2) {
+            top: 20%;
+            right: 15%;
+            animation-delay: 1s;
+        }
+        
+        .decoration:nth-child(3) {
+            bottom: 15%;
+            left: 15%;
+            animation-delay: 2s;
+        }
+        
+        .decoration:nth-child(4) {
+            bottom: 25%;
+            right: 10%;
+            animation-delay: 3s;
+        }
+        
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-20px) rotate(5deg);
+            }
+        }
+        
+        .footer {
+            margin-top: 50px;
+            text-align: center;
+            color: #d4b98c;
+            font-size: 1rem;
+            width: 100%;
+            padding: 25px;
+            border-top: 2px solid rgba(158, 125, 74, 0.4);
+            background: rgba(41, 33, 26, 0.6);
+            border-radius: 15px;
+            backdrop-filter: blur(5px);
+        }
+        
+        .temple-border {
+            height: 35px;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 20"><path fill="%239e7d4a" d="M0 0h100v20H0z"/><path fill="%23d4af37" d="M0 0v20l10-10 10 10V0l10 10 10-10v20l10-10 10 10V0l10 10 10-10v20l10-10 10 10V0z"/></svg>');
+            background-repeat: repeat-x;
+            width: 100%;
+            margin: 30px 0;
+        }
+        
+        @media (max-width: 900px) {
+            .content {
+                flex-direction: column;
+            }
+            
+            .sanskrit {
+                font-size: 2.5rem;
+            }
+            
+            .header h1 {
+                font-size: 2.2rem;
+            }
+            
+            .golu-gallery {
+                min-height: 400px;
+            }
+            
+            .gallery-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .gallery-item:nth-child(1) {
+                grid-column: span 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="temple-border"></div>
+        
+        <div class="header">
+            <div class="sanskrit">नवरात्रम् गोलू आमंत्रणम्</div>
+            <h1>Our Home Welcomes You for Navaratri Golu 2025</h1>
+            <p>Join us in celebrating the divine feminine energy during this auspicious festival of nine nights</p>
+            
+            <div class="date-place">
+                <h2>22nd September - 2nd October 2025</h2>
+                <p><i class="fas fa-map-marker-alt"></i> No.17, 22nd Street, Sowraag Mathura Flats</p>
+                <p>Nanganallur, Chennai 600061</p>
+                <a href="https://www.google.com/maps/search/?api=1&query=No.17,22nd+Street,sowraag+mathura+flats,Nanganallur,chennai+600061" class="map-link-header" target="_blank">
+                    <i class="fas fa-map-marked-alt"></i> Open in Google Maps
+                </a>
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="invitation-card">
+                <h2>You Are Cordially Invited</h2>
+                <p class="invitation-text">
+                    We warmly welcome you and your family to our home for Navaratri Golu celebrations. 
+                    Experience the divine energy, traditional displays, and joyful festivities during 
+                    these auspicious nine nights.
+                </p>
+                <p class="invitation-text">
+                    Join us for prayers, music, traditional food, and the blessings of the Goddess.
+                </p>
+                <div class="contact-info">
+                    <p>For more information, contact:</p>
+                    <p><a href="tel:+919176912554" class="phone-link">+91 9176912554</a></p>
+                </div>
+            </div>
+            
+            <div class="golu-gallery">
+                <div class="decoration">🪔</div>
+                <div class="decoration">🙏</div>
+                <div class="decoration">🪷</div>
+                <div class="decoration">🔔</div>
+                
+                <div class="gallery-container">
+                    <div class="gallery-item" style="background-image: url('file:///C:/Users/adith/Downloads/navaratri-invite/images/traditional_golu.jpg');">
+                        <div class="gallery-caption">Traditional Golu Display</div>
+                    </div>
+                    <div class="gallery-item" style="background-image: url('file:///C:/Users/adith/Downloads/navaratri-invite/images/garba_night.jpg');">
+                        <div class="gallery-caption">Garba Night</div>
+                    </div>
+                    <div class="gallery-item" style="background-image: url('file:///C:/Users/adith/Downloads/navaratri-invite/images/prasadam.jpg');">
+                        <div class="gallery-caption">Prasadam</div>
+                    </div>
+                    <div class="gallery-item" style="background-image: url('file:///C:/Users/adith/Downloads/navaratri-invite/images/pooja_ceremony.jpg');">
+                        <div class="gallery-caption">Puja Ceremony</div>
+                    </div>
+                    <div class="gallery-item" style="background-image: url('file:///C:/Users/adith/Downloads/navaratri-invite/images/vetrilai_paaku.jpg');">
+                        <div class="gallery-caption">Thambulam</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>We look forward to celebrating Navaratri with you! Traditional attire encouraged.</p>
+            <p>May the divine blessings of Goddess Durga be with you and your family</p>
+        </div>
+        
+        <div class="temple-border"></div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add decorative elements dynamically
+            const decorations = ['🪷', '🙏', '🪔', '🔔', '🌸', '⭐'];
+            const container = document.querySelector('.container');
+            
+            for (let i = 0; i < 12; i++) {
+                const decor = document.createElement('div');
+                decor.className = 'decoration';
+                decor.textContent = decorations[Math.floor(Math.random() * decorations.length)];
+                decor.style.left = Math.random() * 100 + '%';
+                decor.style.top = Math.random() * 100 + '%';
+                decor.style.animationDelay = Math.random() * 5 + 's';
+                decor.style.fontSize = (Math.random() * 1.5 + 1.5) + 'rem';
+                container.appendChild(decor);
+            }
+        });
+    </script>
+</body>
+</html>
